@@ -10,24 +10,24 @@
 
 Integer::Integer() : Integer(0)
 {
-    //std::cout << "Integer()" << std::endl;
+    std::cout << "Integer()" << std::endl;
 }
 
 Integer::Integer(int NewValue)
 {
-    //std::cout << "Integer(int NewValue)" << std::endl;
+    std::cout << "Integer(int NewValue)" << std::endl;
     PValue = new int (NewValue);
 }
 
 Integer::Integer(const Integer &Obj)
 {
-    //std::cout << "Integer(const Integer &Obj)" << std::endl;
+    std::cout << "Integer(const Integer &Obj)" << std::endl;
     PValue = new int (*Obj.PValue);
 }
 
 Integer::Integer(Integer &&Obj)
 {
-    //std::cout << "Integer(Integer &&Obj)" << std::endl;
+    std::cout << "Integer(Integer &&Obj)" << std::endl;
     PValue = Obj.PValue;
     Obj.PValue = nullptr;
 }
@@ -62,7 +62,7 @@ void Integer::SetValue(int NewValue)
 
 Integer::~Integer()
 {
-    //std::cout << "~Integer()" << std::endl;
+    std::cout << "~Integer()" << std::endl;
 }
 
 Integer Integer::operator +(const Integer &Obj) const

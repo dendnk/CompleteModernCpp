@@ -36,22 +36,22 @@ std::istream & operator >> (std::istream & in, Integer & obj)
     return in;
 }
 
-int main(int argc, const char * argv[])
-{
-    Integer A(1);
-    Integer B(3);
-    
-    Integer Sum1 = A + 5; // A.operator(5)
-    Integer Sum2 = 5 + A;
-    
-    //std::cout << Sum1.GetValue() << std::endl;
-    //std::cout << Sum2.GetValue() << std::endl;
-    std::cout << Sum1 << std::endl;
-    
-//    std::cin >> A;
-//    std::cout << A << std::endl;
-    
-    B();
-    
-    return 0;
-}
+//int main(int argc, const char * argv[])
+//{
+//    Integer A(1);
+//    Integer B(3);
+//    
+//    Integer Sum1 = A + 5; // A.operator(5)
+//    Integer Sum2 = 5 + A;
+//    
+//    //std::cout << Sum1.GetValue() << std::endl;
+//    //std::cout << Sum2.GetValue() << std::endl;
+//    std::cout << Sum1 << std::endl;
+//    
+////    std::cin >> A;
+////    std::cout << A << std::endl;
+//    
+//    B();
+//    
+//    return 0;
+//}
