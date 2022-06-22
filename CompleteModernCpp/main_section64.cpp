@@ -36,8 +36,8 @@ void CreateInteger()
 //    std::cout << p->GetValue() << std::endl;
 }
 
-int main(int argc, const char * argv[])
-{
-    CreateInteger();
-    return 0;
-}
+//int main(int argc, const char * argv[])
+//{
+//    CreateInteger();
+//    return 0;
+//}
