@@ -27,6 +27,8 @@ public:
     
     Integer & operator = (const Integer & Obj);
     Integer & operator = (Integer && Obj);
+    
+    void operator ()();
 };
 
 #endif /* Integer_h */

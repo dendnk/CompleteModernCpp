@@ -8,15 +8,45 @@
 #include <iostream>
 #include "Integer.h"
 
+Integer operator + (int x, const Integer & y)
+{
+    Integer Temp;
+    Temp.SetValue(x + y.GetValue());
+    return Temp;
+    
+}
+
+std::ostream & operator << (std::ostream & out, const Integer & obj)
+{
+    out << obj.GetValue();
+    return out;
+}
+
+std::istream & operator >> (std::istream & in, Integer & obj)
+{
+    int k;
+    in >> k;
+    obj.SetValue(k);
+    
+    return in;
+}
+
 int main(int argc, const char * argv[])
 {
-    Integer a(1);
-    Integer b(3);
+    Integer A(1);
+    Integer B(3);
     
-    Integer c;
-    a = a;
+    Integer Sum1 = A + 5; // A.operator(5)
+    Integer Sum2 = 5 + A;
     
-    std::cout << a.GetValue() << std::endl;
+    //std::cout << Sum1.GetValue() << std::endl;
+    //std::cout << Sum2.GetValue() << std::endl;
+    std::cout << Sum1 << std::endl;
+    
+//    std::cin >> A;
+//    std::cout << A << std::endl;
+    
+    B();
     
     return 0;
 }

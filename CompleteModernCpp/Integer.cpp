@@ -11,31 +11,31 @@
 
 Integer::Integer() : Integer(0)
 {
-    std::cout << "Integer()" << std::endl;
+    //std::cout << "Integer()" << std::endl;
 }
 
 Integer::Integer(int NewValue)
 {
-    std::cout << "Integer(int NewValue)" << std::endl;
+    //std::cout << "Integer(int NewValue)" << std::endl;
     PValue = new int (NewValue);
 }
 
 Integer::Integer(const Integer &Obj)
 {
-    std::cout << "Integer(const Integer &Obj)" << std::endl;
+    //std::cout << "Integer(const Integer &Obj)" << std::endl;
     PValue = new int (*Obj.PValue);
 }
 
 Integer::Integer(Integer &&Obj)
 {
-    std::cout << "Integer(Integer &&Obj)" << std::endl;
+    //std::cout << "Integer(Integer &&Obj)" << std::endl;
     PValue = Obj.PValue;
     Obj.PValue = nullptr;
 }
 
 int Integer::GetValue() const
 {
-    std::cout << "GetValue()" << std::endl;
+    //std::cout << "GetValue()" << std::endl;
     if (PValue != nullptr)
     {
         return *PValue;
@@ -50,7 +50,7 @@ int Integer::GetValue() const
 
 void Integer::SetValue(int NewValue)
 {
-    std::cout << "SetValue(int NewValue)" << std::endl;
+    //std::cout << "SetValue(int NewValue)" << std::endl;
     if (PValue == nullptr)
     {
         PValue = new int (NewValue);
@@ -63,12 +63,12 @@ void Integer::SetValue(int NewValue)
 
 Integer::~Integer()
 {
-    std::cout << "~Integer()" << std::endl;
+    //std::cout << "~Integer()" << std::endl;
 }
 
 Integer Integer::operator +(const Integer &Obj) const
 {
-    std::cout << "operator +(const Integer &SecondOperand)" << std::endl;
+    //std::cout << "operator +(const Integer &SecondOperand)" << std::endl;
     Integer Result;
     Result.SetValue(GetValue() + Obj.GetValue());
     return Result;
@@ -120,4 +120,9 @@ Integer &Integer::operator=(Integer &&Obj)
         Obj.PValue = nullptr;
     };
     return *this;
+}
+
+void Integer::operator()()
+{
+    std::cout << *PValue << std::endl;
 }
