@@ -5,6 +5,8 @@
 //  Created by Denis Kruchok on 22.06.2022.
 //
 
+#include <iostream>
+
 #ifndef Integer_h
 #define Integer_h
 
@@ -29,6 +31,8 @@ public:
     Integer & operator = (Integer && Obj);
     
     void operator ()();
+    
+    friend std::istream & operator >> (std::istream & in, Integer & obj);
 };
 
 #endif /* Integer_h */

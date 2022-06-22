@@ -26,7 +26,12 @@ std::istream & operator >> (std::istream & in, Integer & obj)
 {
     int k;
     in >> k;
-    obj.SetValue(k);
+    
+    /*
+        If we cannot set value via separate function and we need to get access to private memebers of class, we neeed to use keyword "friend" for function in class declaration
+     */
+    //obj.SetValue(k);
+    *obj.PValue = k;
     
     return in;
 }

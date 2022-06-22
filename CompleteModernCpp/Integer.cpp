@@ -6,7 +6,6 @@
 //
 
 #include "Integer.h"
-#include <iostream>
 
 
 Integer::Integer() : Integer(0)
