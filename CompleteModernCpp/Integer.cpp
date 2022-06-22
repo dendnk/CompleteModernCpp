@@ -26,6 +26,13 @@ Integer::Integer(const Integer &Obj)
     PValue = new int (*Obj.PValue);
 }
 
+Integer::Integer(Integer &&Obj)
+{
+    std::cout << "Integer(Integer &&Obj)" << std::endl;
+    PValue = Obj.PValue;
+    Obj.PValue = nullptr;
+}
+
 int Integer::GetValue() const
 {
     std::cout << "GetValue()" << std::endl;
@@ -90,4 +97,27 @@ Integer Integer::operator++(int)
 bool Integer::operator==(const Integer &Obj) const
 {
     return *PValue == *Obj.PValue;
+}
+
+Integer &Integer::operator=(const Integer &Obj)
+{
+    if (this != &Obj)
+    {
+        delete PValue;
+        PValue = new int (*Obj.PValue);
+
+    }
+    
+    return *this;
+}
+
+Integer &Integer::operator=(Integer &&Obj)
+{
+    if (this != &Obj)
+    {
+        delete PValue;
+        PValue = Obj.PValue;
+        Obj.PValue = nullptr;
+    };
+    return *this;
 }

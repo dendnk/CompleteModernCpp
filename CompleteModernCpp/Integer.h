@@ -15,7 +15,7 @@ public:
     Integer();
     Integer(int NewValue);
     Integer(const Integer & Obj);
-    //Integer(Integer && Obj);
+    Integer(Integer && Obj);
     int GetValue() const;
     void SetValue(int NewValue);
     ~Integer();
@@ -26,6 +26,7 @@ public:
     bool operator == (const Integer & Obj) const;
     
     Integer & operator = (const Integer & Obj);
+    Integer & operator = (Integer && Obj);
 };
 
 #endif /* Integer_h */

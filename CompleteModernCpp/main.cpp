@@ -13,9 +13,10 @@ int main(int argc, const char * argv[])
     Integer a(1);
     Integer b(3);
     
-    Integer sum = a+b;
+    Integer c;
+    a = a;
     
-    std::cout << (sum++).GetValue() << std::endl;
+    std::cout << a.GetValue() << std::endl;
     
     return 0;
 }
