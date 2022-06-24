@@ -8,16 +8,16 @@
 #include <stdio.h>
 #include "Integer.h"
 
-int main(int argc, const char * argv[])
-{
-    // Initialization
-    Integer x1 = 5;
-    
-    // Assignment
-    x1 = 7;
-    
-    //int x2 = x1;
-    int x2 = static_cast<int>(x1);
-    
-    return 0;
-}
+//int main(int argc, const char * argv[])
+//{
+//    // Initialization
+//    Integer x1 = 5;
+//    
+//    // Assignment
+//    x1 = 7;
+//    
+//    //int x2 = x1;
+//    int x2 = static_cast<int>(x1);
+//    
+//    return 0;
+//}
