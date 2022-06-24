@@ -33,6 +33,8 @@ public:
     void operator ()();
     
     friend std::istream & operator >> (std::istream & in, Integer & obj);
+    
+    explicit operator int();
 };
 
 #endif /* Integer_h */

@@ -125,3 +125,8 @@ void Integer::operator()()
 {
     std::cout << *PValue << std::endl;
 }
+
+Integer::operator int()
+{
+    return *PValue;
+}

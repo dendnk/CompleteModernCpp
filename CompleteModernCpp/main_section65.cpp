@@ -24,8 +24,8 @@ void CreateInteger65()
 }
 
 
-int main(int argc, const char * argv[])
-{
-    CreateInteger65();
-    return 0;
-}
+//int main(int argc, const char * argv[])
+//{
+//    CreateInteger65();
+//    return 0;
+//}
