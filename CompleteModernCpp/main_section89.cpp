@@ -28,13 +28,13 @@ Distance operator"" _meters(long double ValueInMiles)
     return Distance(ValueInMiles / 1000);
 }
 
-int main(int argc, const char * argv[])
-{
-    Distance Dist1(32.0_mi);
-    Distance Dist2(7532.0_meters);
-    
-    std::cout << Dist1.GetKm() << std::endl;
-    std::cout << Dist2.GetKm() << std::endl;
-    
-    return 0;
-}
+//int main(int argc, const char * argv[])
+//{
+//    Distance Dist1(32.0_mi);
+//    Distance Dist2(7532.0_meters);
+//    
+//    std::cout << Dist1.GetKm() << std::endl;
+//    std::cout << Dist2.GetKm() << std::endl;
+//    
+//    return 0;
+//}
