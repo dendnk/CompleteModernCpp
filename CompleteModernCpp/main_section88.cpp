@@ -56,21 +56,21 @@ size_t Find(
     return ResultPosition;
 }
 
-int main(int argc, const char * argv[])
-{
-    std::string InputString("H_aRRy Potter");
-    std::string SearchString("aRRy");
-    
-    auto SubstrPos = Find(InputString,SearchString, Case::SENSITIVE, 1);
-    
-    if (SubstrPos == std::string::npos)
-    {
-        std::cout << "Substring was not found!" << std::endl;
-    }
-    else
-    {
-        std::cout << SubstrPos << std::endl;
-    }
-    
-    return 0;
-}
+//int main(int argc, const char * argv[])
+//{
+//    std::string InputString("H_aRRy Potter");
+//    std::string SearchString("aRRy");
+//    
+//    auto SubstrPos = Find(InputString,SearchString, Case::SENSITIVE, 1);
+//    
+//    if (SubstrPos == std::string::npos)
+//    {
+//        std::cout << "Substring was not found!" << std::endl;
+//    }
+//    else
+//    {
+//        std::cout << SubstrPos << std::endl;
+//    }
+//    
+//    return 0;
+//}
