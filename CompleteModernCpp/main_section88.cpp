@@ -19,42 +19,42 @@ std::string ToUpper(const std::string &str)
     return Result;
 }
 
-std::string ToLower(const std::string &str)
-{
-    std::string Result;
-    for (int i(0); i < str.length(); ++i)
-    {
-        Result += tolower(str[i]);
-    }
-    return Result;
-}
-
-
-enum class Case
-{
-    SENSITIVE,
-    INSENSITIVE
-};
- 
-size_t Find(
- const std::string &source,         //Source string to be searched
- const std::string &search_string,  //The string to search for
- Case searchCase = Case::INSENSITIVE,//Choose case sensitive/insensitive search
- size_t offset = 0 )
-{
-    std::string TempSource = source;
-    std::string TempSearchString = search_string;
-    
-    if (searchCase == Case::INSENSITIVE)
-    {
-        TempSource = ToLower(TempSource);
-        TempSearchString = ToLower(TempSearchString);
-    }
-    
-    auto ResultPosition = TempSource.find(TempSearchString,offset);
-    
-    return ResultPosition;
-}
+//std::string ToLower(const std::string &str)
+//{
+//    std::string Result;
+//    for (int i(0); i < str.length(); ++i)
+//    {
+//        Result += tolower(str[i]);
+//    }
+//    return Result;
+//}
+//
+//
+//enum class Case
+//{
+//    SENSITIVE,
+//    INSENSITIVE
+//};
+// 
+//size_t Find(
+// const std::string &source,         //Source string to be searched
+// const std::string &search_string,  //The string to search for
+// Case searchCase = Case::INSENSITIVE,//Choose case sensitive/insensitive search
+// size_t offset = 0 )
+//{
+//    std::string TempSource = source;
+//    std::string TempSearchString = search_string;
+//    
+//    if (searchCase == Case::INSENSITIVE)
+//    {
+//        TempSource = ToLower(TempSource);
+//        TempSearchString = ToLower(TempSearchString);
+//    }
+//    
+//    auto ResultPosition = TempSource.find(TempSearchString,offset);
+//    
+//    return ResultPosition;
+//}
 
 //int main(int argc, const char * argv[])
 //{

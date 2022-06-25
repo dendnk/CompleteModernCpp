@@ -53,20 +53,20 @@ void PrintList(std::initializer_list<int> values)
     std::cout << std::endl;
 }
 
-int main(int argc, const char * argv[])
-{
-    int x {0};
-    float y{3.1f};
-    int arr[5]{3,1,2,6};
-    
-    std::string str{"Hello world!"};
-    
-    std::initializer_list<int> data = {1,2,35};
-    auto values = {1,2,35};
-    
-    Bag b {3,1,2};
-
-    PrintList({3,1,4,5});
-    
-    return 0;
-}
+//int main(int argc, const char * argv[])
+//{
+//    int x {0};
+//    float y{3.1f};
+//    int arr[5]{3,1,2,6};
+//
+//    std::string str{"Hello world!"};
+//
+//    std::initializer_list<int> data = {1,2,35};
+//    auto values = {1,2,35};
+//
+//    Bag b {3,1,2};
+//
+//    PrintList({3,1,4,5});
+//
+//    return 0;
+//}
