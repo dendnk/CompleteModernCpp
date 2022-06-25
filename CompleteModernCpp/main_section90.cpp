@@ -17,27 +17,27 @@ constexpr int Add (int x, int y)
     return x+y;
 }
 
-int main(int argc, const char * argv[])
-{
-    // Behaves as constexpr function (computed at compile time)
-    constexpr int i = GetNumber();
-    int arr[i];
-    
-    // Behaves as constexpr function (computed at compile time)
-    const int j = GetNumber();
-    int arr1[j];
-    
-    // Behaves as normal function
-    int x = GetNumber();
-    
-    // Behaves as constexpr function (computed at compile time)
-    constexpr int sum = Add(3,5);
-    
-    // Behaves as normal function
-    int sum2 = Add(sum,5);
-    
-    return 0;
-}
+//int main(int argc, const char * argv[])
+//{
+//    // Behaves as constexpr function (computed at compile time)
+//    constexpr int i = GetNumber();
+//    int arr[i];
+//    
+//    // Behaves as constexpr function (computed at compile time)
+//    const int j = GetNumber();
+//    int arr1[j];
+//    
+//    // Behaves as normal function
+//    int x = GetNumber();
+//    
+//    // Behaves as constexpr function (computed at compile time)
+//    constexpr int sum = Add(3,5);
+//    
+//    // Behaves as normal function
+//    int sum2 = Add(sum,5);
+//    
+//    return 0;
+//}
 
 // Constexpr function should accept and return only literal types
 // Literal types
