@@ -33,6 +33,7 @@ public:
     void operator ()();
 
     friend std::istream & operator >> (std::istream & in, Integer & obj);
+    friend std::ostream & operator << (std::ostream & out, Integer & obj);
 
     explicit operator int();
 };

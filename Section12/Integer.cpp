@@ -130,3 +130,19 @@ Integer::operator int()
 {
     return *PValue;
 }
+
+std::istream& operator>>(std::istream& in, Integer& obj)
+{
+    int Input{};
+    in >> Input;
+    obj.SetValue(Input);
+
+    return in;
+}
+
+std::ostream& operator<<(std::ostream& out, Integer& obj)
+{
+    out << obj.GetValue();
+
+    return out;
+}
