@@ -18,7 +18,7 @@ void ShowError(PFN pfn)
 
 }
 
-typedef std::vector<std::list<std::string>> Names;
+//typedef std::vector<std::list<std::string>> Names;
 
 
 // Alias can be tepltized

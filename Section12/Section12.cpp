@@ -9,12 +9,13 @@
 //#include "ClassTemplates.h"
 //#include "ClassTemplatesExplicitSpec.h"
 //#include "ClassTemplatePartialSpec.h"
-#include "TypeAliases.h"
+//#include "TypeAliases.h"
+#include "TypeTraits.h"
 
 
 int main()
 {
-    TypeAliasesMain();
+    TypeTraitsMain();
 
     return 0;
 }
