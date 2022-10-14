@@ -7,12 +7,14 @@
 //#include "VariadicTemplates.h"
 //#include "AssignmentIV.h"
 //#include "ClassTemplates.h"
-#include "ClassTemplatesExplicitSpec.h"
+//#include "ClassTemplatesExplicitSpec.h"
+//#include "ClassTemplatePartialSpec.h"
+#include "TypeAliases.h"
 
 
 int main()
 {
-    ClassTemplatesExplicitSpecMain();
+    TypeAliasesMain();
 
     return 0;
 }
