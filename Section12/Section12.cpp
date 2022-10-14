@@ -5,12 +5,14 @@
 //#include "Assignment3.h"
 //#include "PerfectForwarding.h"
 //#include "VariadicTemplates.h"
-#include "AssignmentIV.h"
+//#include "AssignmentIV.h"
+//#include "ClassTemplates.h"
+#include "ClassTemplatesExplicitSpec.h"
 
 
 int main()
 {
-    AssignmentIV_Main();
+    ClassTemplatesExplicitSpecMain();
 
     return 0;
 }
