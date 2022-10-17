@@ -4,7 +4,9 @@
 //#include "FunctionObjects.h"
 //#include "LambdaExpressions.h"
 //#include "CaptureList.h"
-#include "GeneralizedLambdaCapture.h"
+//#include "GeneralizedLambdaCapture.h"
+#include "Assignment.h"
+
 
 int main()
 {
@@ -12,5 +14,5 @@ int main()
 	//FunctionObjectsMain();
 	//LambdaExpressionsMain();
 	//CaptureListMain();
-	GeneralizedLambdaCaptureMain();
+	AssignmentMain();
 }
