@@ -4,10 +4,11 @@
 //#include "Vector.h"
 //#include "Deque.h"
 //#include "Lists.h"
-#include "Sets.h"
+//#include "Sets.h"
+#include "Maps.h"
 
 
 int main()
 {
-	SetsMain();
+	MapsMain();
 }
