@@ -7,10 +7,11 @@
 //#include "Sets.h"
 //#include "Maps.h"
 //#include "UnorderedContainers.h"
-#include "Algorithms.h"
+//#include "Algorithms.h"
+#include "ContainerChangesC11.h"
 
 
 int main()
 {
-	AlgorithmsMain();
+	ContainerChangesC11Main();
 }
