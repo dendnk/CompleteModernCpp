@@ -6,10 +6,11 @@
 //#include "Lists.h"
 //#include "Sets.h"
 //#include "Maps.h"
-#include "UnorderedContainers.h"
+//#include "UnorderedContainers.h"
+#include "Algorithms.h"
 
 
 int main()
 {
-	UnorderedContainersMain();
+	AlgorithmsMain();
 }
