@@ -55,8 +55,67 @@ void UnorderMap()
 	}
 }
 
+class Employee
+{
+	std::string Name;
+	int Id;
+public:
+	Employee(const std::string& InitName, int InitId)
+		: Name(InitName)
+		, Id(InitId)
+	{}
+
+	const std::string& GetName() const
+	{
+		return Name;
+	}
+
+	const int GetId() const
+	{
+		return Id;
+	}
+};
+
+struct EmployeeHash
+{
+	size_t operator()(const Employee& emp) const
+	{
+		auto s1 = std::hash<std::string>{}(emp.GetName());
+		auto s2 = std::hash<int>{}(emp.GetId());
+
+		return s1 ^ s2;
+	}
+};
+
+struct EmpEquality
+{
+	bool operator()(const Employee& emp1, const Employee& emp2) const
+	{
+		return emp1.GetId() == emp2.GetId()	&& emp1.GetName() == emp2.GetName();
+	}
+};
+
+void Hashes()
+{
+	std::hash<std::string> h;
+	std::cout << "Hash : " << h("Hello") << std::endl;
+
+	std::unordered_set<Employee, EmployeeHash, EmpEquality> coll;
+
+	coll.insert(Employee{ "Bob", 123 });
+	coll.insert(Employee{ "Rohn", 456 });
+	coll.insert(Employee{ "John", 789 });
+
+	for (const auto& x : coll)
+	{
+		std::cout << x.GetId() << " : " << x.GetName() << std::endl;
+	}
+}
+
 void UnorderedContainersMain()
 {
 	//UnorderSet();
-	UnorderMap();
+	//UnorderMap();
+
+	Hashes();
 }
