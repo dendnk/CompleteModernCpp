@@ -2,10 +2,11 @@
 
 //#include "ConcurrencyBasic.h"
 //#include "ThreadSynchronization.h"
-#include "ThreadFunctions.h"
+//#include "ThreadFunctions.h"
+#include "TaskBasedConcurrency.h"
 
 
 int main()
 {
-	ThreadFunctionsMain();
+	TaskBasedConcurrencyMain();
 }
