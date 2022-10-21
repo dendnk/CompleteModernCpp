@@ -7,9 +7,10 @@
 //#include "InlineVariables.h"
 //#include "NestedNamespaces.h"
 //#include "UpdateNoException.h"
-#include "UpdateLambdas.h"
+//#include "UpdateLambdas.h"
+#include "StructuredBindings.h"
 
 int main()
 {
-	UpdateLambdasMain();
+	StructuredBindingsMain();
 }
