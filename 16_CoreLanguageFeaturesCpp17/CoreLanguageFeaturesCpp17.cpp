@@ -6,10 +6,10 @@
 //#include "IfSwitchWithInit.h"
 //#include "InlineVariables.h"
 //#include "NestedNamespaces.h"
-#include "UpdateNoException.h"
-
+//#include "UpdateNoException.h"
+#include "UpdateLambdas.h"
 
 int main()
 {
-	UpdateNoExceptionMain();
+	UpdateLambdasMain();
 }
