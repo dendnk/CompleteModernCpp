@@ -5,10 +5,11 @@
 //#include "FeatureTestMacro.h"
 //#include "IfSwitchWithInit.h"
 //#include "InlineVariables.h"
-#include "NestedNamespaces.h"
+//#include "NestedNamespaces.h"
+#include "UpdateNoException.h"
 
 
 int main()
 {
-	NestedNamespacesMain();
+	UpdateNoExceptionMain();
 }
