@@ -1,7 +1,10 @@
 #include <iostream>
-#include "CTAD.h"
+
+//#include "CTAD.h"
+#include "Folding.h"
+
 
 int main()
 {
-	CTAD_Main();
+	FoldingMain();
 }
