@@ -9,10 +9,11 @@
 //#include "UpdateNoException.h"
 //#include "UpdateLambdas.h"
 //#include "StructuredBindings.h"
-#include "EvaluationOrder.h"
+//#include "EvaluationOrder.h"
+#include "MandatoryCopyEllision.h"
 
 
 int main()
 {
-	EvaluationOrderMain();
+	MandatoryCopyEllisionMain();
 }
