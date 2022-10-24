@@ -8,9 +8,11 @@
 //#include "NestedNamespaces.h"
 //#include "UpdateNoException.h"
 //#include "UpdateLambdas.h"
-#include "StructuredBindings.h"
+//#include "StructuredBindings.h"
+#include "EvaluationOrder.h"
+
 
 int main()
 {
-	StructuredBindingsMain();
+	EvaluationOrderMain();
 }

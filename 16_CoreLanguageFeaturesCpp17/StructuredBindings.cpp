@@ -72,7 +72,7 @@ void StructuredBindingsMain()
 
 
 
-	StructWithArray Str;
+	//StructWithArray Str;
 
-	auto [s1, s2] = Str; // s1 and s2 will be array types. Arrays inside structure not decay to a pointers
+	//auto [s1, s2] = Str; // s1 and s2 will be array types. Arrays inside structure not decay to a pointers
 }
