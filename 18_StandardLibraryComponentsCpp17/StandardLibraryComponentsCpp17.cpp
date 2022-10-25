@@ -1,8 +1,9 @@
-#include "Optional.h"
 #include <iostream>
+//#include "Optional.h"
+#include "Variant.h"
 
 
 int main()
 {
-    OptionalMain();
+    VariantMain();
 }
