@@ -31,6 +31,12 @@
 *	Such as QString from QT library or C string from MFC, even use string from com.
 *	In com string represented as binary strings
 *
+*	When to use std::string_view
+*		Don't pass in functions that accept C-style string because it might not have a null terminator
+*		Do not return string_view to string from a function
+*		Do not assign temporary strings to strings view
+*		Avoid as class members
+*
 */
 
 void StringViewMain();
