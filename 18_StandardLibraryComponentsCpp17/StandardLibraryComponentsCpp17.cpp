@@ -3,10 +3,11 @@
 //#include "Variant.h"
 //#include "StdAny.h"
 //#include "StringView.h"
-#include "Filesystem.h"
+//#include "Filesystem.h"
+#include "ParallelAlgorithms.h"
 
 
 int main()
 {
-    FilesystemMain();
+    ParallelAlgorithmsMain();
 }
